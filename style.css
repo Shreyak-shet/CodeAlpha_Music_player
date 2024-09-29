@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container-fluid {
+    background: linear-gradient(270deg, #FF5733, #FFBD33, #75FF33, #33FFBD, #3375FF, #A233FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 15px; /* Optional for rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+
+    
+
+.bor{
+    border-radius: 100px;
+}
+.music_container{
+    box-shadow: 2px 7px 18px 13px rgba(191,184,184,0.75);
+    -webkit-box-shadow: 3px 7px 15px 16px rgba(191,184,184,0.75);
+    -moz-box-shadow: 2px 4px 13px 17px rgba(191,184,184,0.75);
+    
+    
+    background: linear-gradient(135deg, #ff0080, #ff8c00, #ffd700, #00c800, #00d4ff);
+
+   
+}
+.music_controls{
+   width: 20rem;
+   height: 10rem;
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+   align-items: center;
+}
+.fas{
+    font-size:2rem ;
+    cursor: pointer;
+}
+.fas:hover{
+    color: gray;
+}
+.main_btn{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.main_btn:hover{
+    background-color: #f4f1f1;
+    color: #111;
+   transition: all .7s ease-in-out;
+    box-shadow: 0rem .4rem 2rem 0.2rem rgba(0, 0, 0, 0.603);
+}
+img{
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+ border-radius: 50%;
+     
+}
+
+
+#artist{
+    opacity: .7;
+}
+
+
+
+
+
+
+/* creating a class */
+
+
+
+.anime{
+  animation: roatateimg 8s linear  infinite;
+}
+
+@keyframes roatateimg{
+   
+     from{
+     transform: rotate(0deg); 
+     }
+     to{
+     transform: rotate(360deg);
+
+
+    
+     }
+    
+ 
+}
+
+/* .rotate{
+  animation: roatatecontainer .2s linear  infinite;
+
+}
+
+@keyframes roatatecontainer{
+    from{
+   transform: rotate(0deg);
+    }
+    to{
+    transform: rotate(360deg);
+    }
+} */
+.progressbar_container{
+    width: 90%;
+    height: auto;
+    padding: 0.5rem 0;
+    margin-top:1rem;
+    margin: auto;
+   }
+
+
+.progress_div{
+    width:100%;
+    height: 0.6rem;
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) , 0 1px 2px rgba(0, 0, 0, 0.07),0 1px 2px rgba(0, 0, 0, 0.07),0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+  .progress_duration_meter
+   {
+     display: flex;
+     justify-content: space-between;
+     font-size: 1.2rem;
+   }
+
+
+  
